@@ -1,0 +1,275 @@
+/*CSS RESET*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica;
+}
+
+body{
+    background-color: #fafafa;   
+}
+
+/*Main*/
+
+.main-container{
+    display: flex;
+    margin-top: 30px;
+}
+
+.image-container, .form-container{
+    flex: 1 1 0;
+    width: 50%;
+}
+
+.image-container{
+    text-align: right;
+
+}
+.image-container img{
+    width: 100%;
+    margin-right: 15px;
+    margin-top: 25px;
+    max-width: 380px;
+}
+
+.form-container{
+    text-align: center;
+}
+
+.form-box{
+    background-color: #ffffff;
+    border: 1px solid #dbdbdb;
+    width: 350px;
+    margin-top: 30px;
+}
+
+.logo-insta{
+    width: 175px;
+    height: 51px;
+    margin: 30px auto 12px;
+}
+
+.login-form{
+    margin-top: 20px;
+}
+
+.login-form input{
+    display: block;
+    font-size: 12px;
+    padding: 12px 9px;
+    background-color: #fafafa;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    width: 268px;
+    margin: 5px auto;
+}
+
+.login-form input[type="submit"]{
+    background-color: #b2dffc;
+    color: #ffffff;
+    border-radius: 5px;
+    margin-top: 15px;
+    height: 30px;
+    font-size: 13px;
+    padding: 0;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.login-form input[type="submit"]:hover{
+    background-color: #279de8;
+}
+
+.separator{
+    position: relative;
+}
+
+.line{
+    border-top: 1px solid #dbdbdb;
+    width: 268px;
+    margin: 25px auto 35px;
+}
+
+.separator span{
+    position: absolute;
+    color: #bbb;
+    top: -6px;
+    width: 50px;
+    background-color: #ffffff;
+    margin-left: -25px;
+    font-size: 14px;
+}
+
+.alternativo{
+
+}
+
+.facebook-login{
+    margin-bottom: 25px;
+}
+
+.facebook-login a{
+    text-decoration: none;
+    color: #385185;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.facebook-login img{
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+}
+
+.facebook-login span{
+    font-weight: bold;
+    font-size: 13px;
+    margin-top: 1px;
+}
+
+.forgot-pass{
+    margin-bottom: 20px;
+    font-size: 12px;
+}
+
+.forgot-pass a{
+    text-decoration: none;
+    color: #373799;
+}
+
+.signup-container{
+    background-color: #ffffff;
+    border: 1px solid #dbdbdb;
+    width: 350px;
+    margin-top: 10px;
+    padding: 25px;
+}
+
+.signup-container p{
+    font-size: 14px;
+    color: #262626;
+}
+
+.signup-container a{
+    font-weight: bold;
+    text-decoration: none;
+    color: #4a95f6;
+}
+
+.app-container{
+    text-align: center;
+    width: 350px;
+}
+.app-container p{
+    margin: 20px 0;
+    font-size: 13px;
+}
+.app-container a{
+    text-decoration: none;
+}
+.app-container img{
+    width: 136px;
+    height: 40px;
+}
+
+footer{
+    text-align: left;
+    width: 1000px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .footer-links{
+    display: flex;
+    list-style: none;
+}
+
+.footer-links li{
+    margin-right: 10px;
+}
+
+.footer-links a, .copyright{
+    text-decoration: none;
+    color: #8e8e8e;
+    font-size: 12px;
+}
+
+.copyright{
+    margin-top: 10px;
+}
+
+/*Mobile 450px*/
+@media (max-width: 450px){
+    body{
+        background-color: #ffffff;
+    }
+
+    .image-container{
+        display: none;
+    }
+    .main-container, .form-box{
+        margin-top: 0;
+    }
+
+    .form-container, .form-box, .signup-container, .app-container{
+        width: 100%;
+        border: none;
+    }
+
+    footer{
+        width: 90%;
+    }
+
+    .footer-links{
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+}
+
+/*Tablets 768px*/
+@media (min-width:451px) and (max-width: 768px){
+    body{
+        background-color: #ffffff;
+    }
+
+    .image-container{
+        display: none;
+    }
+    .main-container, .form-box{
+        margin-top: 0;
+    }
+
+    .form-container, 
+    .form-box, .signup-container, 
+    .app-container{
+        width: 100%;
+        border: none;
+    }
+    .login-form input, .line {
+        width: 500px;
+    }
+
+    .signup-container {
+        padding: 0 25px;
+    }
+    footer{
+        width: 90%;
+        margin: 5px auto;
+        padding: 15px;
+    }
+
+    .footer-links{
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+}
+
+/*Laptops Small 900px*/
+@media (max-width: 900px){}
